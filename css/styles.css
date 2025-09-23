@@ -92,46 +92,59 @@
             color: #ffe082;
         }
 
-        /* ====== Header Profil ====== */
-        header {
-            text-align: center;
-            padding: 3rem 1rem;
-            background: linear-gradient(135deg, #dfe9f3, #ffffff);
+
+
+        /* ====== PROFILE HEADER ====== */
+        .profile-header {
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        text-align: center;
+        padding: 80px 20px;
+        position: relative;
         }
-        header img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #8ab6d6;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+        .profile-container {
+        max-width: 700px;
+        margin: auto;
         }
-        header h1 {
-            margin: 1rem 0 0.3rem;
-            font-size: 2.2rem;
-            color: #5a5c9f;
+
+        .profile-img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        border: 5px solid #6978d2;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
         }
-        header p {
-            color: #666;
-            font-size: 1rem;
+
+        .profile-name {
+        font-size: 32px;
+        margin: 20px 0 10px;
+        color: #2c5397;
+        font-weight: 700;
         }
+
+        .profile-desc {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 25px;
+        }
+
+        /* Sosial Media Icon */
         .social-links {
-            margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
         }
+
         .social-links a {
-            margin: 0 0.5rem;
-            font-size: 1.4rem;
-            color: #5a5c9f;
-            background: #f0f2f8;
-            padding: 0.5rem;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        font-size: 22px;
+        color: #13085b;
+        transition: 0.3s ease-in-out;
         }
+
         .social-links a:hover {
-            background: #8ab6d6;
-            color: #fff;
-            transform: translateY(-3px);
+        color: #2575fc;
+        transform: scale(1.2);
         }
 
         /* ====== Section Umum ====== */
@@ -256,6 +269,24 @@
             .timeline-content {
                 font-size: 0.9rem;
             }
+        }
+
+        /* ====== GLOBAL BACKGROUND ====== */
+        body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: #333;
+        }
+
+        /* Untuk memberi kontras di setiap section */
+        section {
+        background: rgba(255, 255, 255, 0.85);
+        margin: 40px auto;
+        padding: 50px 30px;
+        border-radius: 20px;
+        max-width: 1000px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
 
