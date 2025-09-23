@@ -10,271 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome untuk ikon sosial media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* ====== Reset & Base Styling ====== */
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #444;
-            background: #f5f7fa;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* ====== Navigasi ====== */
-        nav {
-            position: sticky;
-            top: 0;
-            background: #8ab6d6;
-            color: #fff;
-            padding: 0.8rem 2rem;
-            display: flex;
-            justify-content: center;
-            border-bottom: 2px solid #7aa4c3;
-            z-index: 1000;
-        }
-        nav a {
-            margin: 0 1rem;
-            font-weight: 600;
-            color: #fff;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #ffe082;
-        }
-
-        /* ====== Header Profil ====== */
-        header {
-            text-align: center;
-            padding: 3rem 1rem;
-            background: linear-gradient(135deg, #dfe9f3, #ffffff);
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #8ab6d6;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 1rem 0 0.3rem;
-            font-size: 2.2rem;
-            color: #5a5c9f;
-        }
-        header p {
-            color: #666;
-            font-size: 1rem;
-        }
-        .social-links {
-            margin-top: 1rem;
-        }
-        .social-links a {
-            margin: 0 0.5rem;
-            font-size: 1.4rem;
-            color: #5a5c9f;
-            background: #f0f2f8;
-            padding: 0.5rem;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .social-links a:hover {
-            background: #8ab6d6;
-            color: #fff;
-            transform: translateY(-3px);
-        }
-
-        /* ====== Section Umum ====== */
-        section {
-            padding: 2.5rem 1.2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        section h2 {
-            margin-bottom: 1rem;
-            color: #5a5c9f;
-            font-size: 1.6rem;
-            border-left: 5px solid #8ab6d6;
-            padding-left: 0.6rem;
-        }
-        section p {
-            color: #555;
-        }
-
-        /* ====== Tabel Pengalaman Organisasi ====== */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1.5rem;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        table, th, td {
-            border: none;
-        }
-        th {
-            background: #8ab6d6;
-            color: #fff;
-            padding: 0.9rem;
-            text-align: left;
-        }
-        td {
-            padding: 0.9rem;
-            background: #fff;
-            border-bottom: 1px solid #eee;
-        }
-        tr:hover td {
-            background: #f7faff;
-        }
-        /* Responsif untuk tabel */
-        @media (max-width: 600px) {
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
-            th {
-                display: none;
-            }
-            td {
-                border: none;
-                border-bottom: 1px solid #eee;
-                padding: 0.8rem 0;
-            }
-            td::before {
-                content: attr(data-label);
-                font-weight: bold;
-                display: block;
-                margin-bottom: 0.2rem;
-                color: #5a5c9f;
-            }
-        }
-        
-        /* ====== Timeline Riwayat Pendidikan ====== */
-        .timeline {
-            position: relative;
-            margin: 2rem 0;
-            padding-left: 30px;
-            border-left: 3px solid #8ab6d6;
-        }
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2rem;
-        }
-        .timeline-dot {
-            position: absolute;
-            left: -11px;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            background: #5a5c9f;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            box-shadow: 0 0 0 3px #8ab6d6;
-        }
-        .timeline-content {
-            background: #fff;
-            padding: 1.2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .timeline-content h3 {
-            margin-top: 0;
-            color: #5a5c9f;
-        }
-        .timeline-content .year {
-            display: inline-block;
-            margin: 0.5rem 0 1rem;
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: #8ab6d6;
-        }
-        .timeline-content p {
-            margin: 0;
-            color: #555;
-        }
-        .timeline-content:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-        }
-
-        /* Responsif */
-        @media (max-width: 600px) {
-            .timeline {
-                padding-left: 20px;
-            }
-            .timeline-content {
-                font-size: 0.9rem;
-            }
-        }
-
-
-
-        /* ====== Formulir Kontak ====== */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
-            background: #ffffff;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-        }
-        input, textarea {
-            padding: 0.9rem;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-family: inherit;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-        input:focus, textarea:focus {
-            border-color: #8ab6d6;
-            box-shadow: 0 0 6px rgba(138,182,214,0.4);
-            outline: none;
-        }
-        textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        button {
-            padding: 0.9rem;
-            border: none;
-            background: #5a5c9f;
-            color: #fff;
-            font-weight: 600;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        button:hover {
-            background: #8ab6d6;
-            transform: translateY(-2px);
-        }
-
-        /* ====== Footer ====== */
-        footer {
-            text-align: center;
-            background: #8ab6d6;
-            color: #fff;
-            padding: 1rem;
-            margin-top: 3rem;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <!-- Navigasi -->
-    <nav>
-        <a href="#riwayat-pendidikan">Riwayat Pendidikan</a>
-        <a href="#hobi">Hobi</a>
-        <a href="#pengalaman-organisasi">Pengalaman Organisasi</a>
-        <a href="#hubungi-saya">Hubungi Saya</a>
-    </nav>
+
+    <!-- ====== NAVBAR ====== -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Gerald<span>Portofolio</span></div>
+    <ul class="nav-links">
+      <li><a href="#riwayat-pendidikan">Riwayat Pendidikan</a></li>
+      <li><a href="#hobi">Hobi</a></li>
+      <li><a href="#pengalaman-organisasi">Pengalaman Organisasi</a></li>
+      <li><a href="#contact">Hubungi Saya</a></li>
+    </ul>
+  </nav>
+</header>
+
 
     <!-- Header Profil -->
     <header>
@@ -366,7 +119,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Profil Diri - Dibuat dengan ❤</p>
+        <p>&copy; 2025 Profil Diri - Dibuat oleh Gerald</p>
     </footer>
 </body>
 </html>
