@@ -42,5 +42,23 @@ Website ini merupakan portofolio pribadi yang dibuat dalam bentuk satu halaman (
 
 ---
 ## 🎨 Preview Tampilan
+### index.html
+<img width="1395" height="1927" alt="ss page index tugas 2" src="https://github.com/user-attachments/assets/ed729682-ba78-4cb9-9a1c-4a7ada6c9533" />
+
+---
+### resume.html
+<img width="1920" height="3167" alt="screencapture-file-D-SMT-3-Pemrograman-Internet-tugas2-Profile-Diri-PemrogramanInternet1-resume-html-2025-10-22-10_23_39" src="https://github.com/user-attachments/assets/60086f8b-7edf-4231-868f-3ac96b91c88a" />
+
+---
+###  hobby.html
+<img width="1395" height="1897" alt="ss page hobby" src="https://github.com/user-attachments/assets/d029c883-5459-407e-91a8-8c2d4f3e5740" />
+
+---
+### contact.html
+<img width="1395" height="1222" alt="ss page contact" src="https://github.com/user-attachments/assets/1ae7693c-6f6c-478a-82ee-af0a071cd2d2" />
+
+---
+
+## Preview Tugas 1 ( Tampilan sebelum di ubah menjadi lebih bagus di tugas 2)
 <img width="1920" height="4092" alt="profile-diri-prognet" src="https://github.com/user-attachments/assets/451b6f39-42fd-497b-83bd-447a5863bd56" />
 
